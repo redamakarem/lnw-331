@@ -1,0 +1,232 @@
+<!-- /sections/section-reviews.liquid -->
+
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+-%}
+
+{%- style -%}
+  #Reviews--{{ section.id }} {
+    --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+
+    {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+
+    {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+      --bg: {{ bg_color }};
+    {%- endunless -%}
+  }
+{%- endstyle -%}
+
+<div id="Reviews--{{ section.id }}"
+  class="reviews section-padding {{ section.settings.text_align }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="reviews">
+  <div class="reviews__slider {% if section.blocks.size == 1 %}reviews__slider--with-only-one-slide{% endif %} reviews__slider--{{ section.id }}">
+    {%- if section.blocks.size > 0 -%}
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign customer_name = block.settings.title
+          assign review = block.settings.review_text
+          assign bio_image = block.settings.bio_image
+          assign subheading = block.settings.subheading
+          assign review_url = block.settings.review_url
+        -%}
+
+        <div class="review__slide review__slide--{{ block.id }}" {{ block.shopify_attributes }}>
+          <div class="review">
+            <div class="review__content">
+              {%- if review != blank -%}
+                {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                <blockquote class="{{ font_size_class }}">
+                  <span class="tesimonial__quotes">{% render 'icon-quotes' %}</span>
+                  {{ review }}
+                </blockquote>
+              {%- endif -%}
+
+              {%- if customer_name != blank or review_url != blank or bio_image != blank -%}
+                <div class="review__author {% if bio_image == blank %}review__author--no-bio-image{% endif %}">
+                  {%- if bio_image != blank -%}
+                    <div class="review__author-bio-image lazyload" data-bgset="{% render 'bgset', image: bio_image %}"></div>
+                    <noscript>
+                      <div class="review__author-bio-image no-js-image" style="background-image: url( {{ bio_image | img_url: '1024x' }} )"></div>
+                    </noscript>
+                  {%- endif -%}
+                  {%- if customer_name != blank or subheading != blank -%}
+                    <div class="review__author__content">
+                      {%- if customer_name != blank -%}
+                        <strong>{{ customer_name }}</strong>
+                      {%- endif -%}
+                      {%- if subheading != blank -%}
+                        <span class="subheading">{{ subheading }}</span>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              {%- if review_url != blank -%}
+                <div class="review__tweet-url">
+                  <a href="{{ review_url }}" rel="noopener" target="_blank">
+                    {{ block.settings.review_link_name }}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    {%- else -%}
+      {%- render 'no-blocks' -%}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "default": "text-left",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-center",
+          "label": "Centered"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Testimonial",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "header",
+          "content":"Testimonial"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Customer name",
+          "default": "Example Customer"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default":"Industry Expert"
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Testimonial",
+          "default": "<p>Use this text to showcase a review from one of your customers.  A great review is honest and speaks to the concerns of your customers.</p>"
+        },
+        {
+          "type":  "range",
+          "id":    "text_size",
+          "label": "Testimonial size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default":4
+        },
+        {
+          "type": "image_picker",
+          "id": "bio_image",
+          "label": "Bio image"
+        },
+        {
+          "type": "header",
+          "content": "Review link"
+        },
+        {
+          "type": "url",
+          "id": "review_url",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "review_link_name",
+          "label": "Link name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "title":"Jeremy Usborne"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "title":"Willy Bridge"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "title":"Kenneth Powell"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,156 @@
+<section class="award-slider">
+    <div class="page-width">
+        <h2>{{ section.settings.award-slider }}</h2>
+        <div class="award-track owl-carousel">
+
+            {%- for block in section.blocks -%}
+            <div class="item">
+                <div class="card">
+                    <div class="front">
+                        <div class="logo-wrapper">
+                            <img src="{{ block.settings.logo | img_url }}" alt="Logo image" class="logo">
+                        </div>
+                        <div class="heading-wrapper">
+                            <h3>{{ block.settings.heading }}</h3>
+                        </div>
+                        <div class="year-wrapper">
+                            <h5>{{ block.settings.year }}</h5>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <p class="award-desc">{{block.settings.back-text}}</p>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+
+        </div>
+        <div class="slider-controls">
+            <div class="prev-slide"><img src="{{ 'arrow-left.png' |asset_url }}" alt="carousel-previous-icon"></div>
+            <div class="next-slide"><img src="{{ 'arrow-right.png'|asset_url }}" alt="carousel-previous-icon"></div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+    "name": "award Slider",
+    "settings": [
+        {
+            "id": "award-slider",
+            "type": "text",
+            "label": "Add a award slider"
+        }
+    ],
+    "templates": ["index"],
+    "presets": [
+        {
+            "name": "award Slider",
+            "category": "Sliders"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "award Card",
+            "type": "award-card",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Logo"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "text",
+                    "id": "year",
+                    "label": "Year"
+                },
+                {
+                    "type": "text",
+                    "id": "back-text",
+                    "label": "Back text"
+                }
+              
+                
+            ]
+        }
+    ]
+}
+{% endschema %}
+
+
+{% javascript %}
+  var awardSlider = $('.award-track').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1600:{
+            items:4
+        }
+    }
+});
+$('.prev-slide').click(function() {
+    console.log('AWARD PREV')
+    awardSlider.trigger('prev.owl.carousel');
+});
+$('.next-slide').click(function() {
+    console.log('AWARD PREV');
+    awardSlider.trigger('next.owl.carousel');
+});
+
+$(".card").flip();
+
+  {% endjavascript %}
+
+  {% stylesheet %}
+  .award-slider .slider-controls{
+    margin: 15px 15px;
+    width:72px;
+
+  }
+  .award-track {
+    padding: 0px 15px;
+}
+.card{
+    min-height:300px;
+}
+  .front {
+    border: 1px solid #F0F0F2;
+    border-radius: 20px;
+    padding: 15px 20px;
+    min-height: 300px;
+}
+    
+.back{
+    min-height: 300px;
+    border: 1px solid #F0F0F2;
+    background-color: #F0EEEC;
+    border-radius: 20px;
+
+}
+
+p.award-desc {
+    padding: 32px;
+}
+
+.logo-wrapper img {
+    max-width: 96px;
+    height: auto;
+}
+  {% endstylesheet %}
