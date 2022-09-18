@@ -358,7 +358,7 @@
             "flex_align": "align--middle-center",
             "text_color": "text-light",
             "transparent": true,
-            "link_text": "View products",
+            "link_text": "",
             "link": "",
             "button_color": "btn--white",
             "button_style": "hero__btn btn btn--large btn--outline caps"
