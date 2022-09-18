@@ -342,6 +342,57 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
+    },
+    "16635350715c677d8a": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1663535070b1c6c6e8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/One_Tree_Planted_Partners_-_shop_1.png",
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "1663535070b1c6c6e8-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing",
+            "title": "Text block",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 2,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "text-dark",
+            "bg_color": "#ffffff",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "1663535070b1c6c6e8-0",
+        "1663535070b1c6c6e8-1"
+      ],
+      "settings": {
+        "height": "screen-height-full",
+        "padding": false,
+        "borders": false,
+        "wrapper": false,
+        "lnw-wrapper": true
+      }
     }
   },
   "order": [
@@ -354,6 +405,7 @@
     "16635300017820c205",
     "166353040431c2ecd9",
     "16635310282fcc103f",
-    "1663531088395d71e7"
+    "1663531088395d71e7",
+    "16635350715c677d8a"
   ]
 }
