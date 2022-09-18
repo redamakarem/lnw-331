@@ -12,13 +12,13 @@
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "PLEASURE YOU DESERVE",
-            "description": "PLEASURE YOU DESERVE",
+            "description": "",
             "flex_align": "align--middle-center",
             "text_color": "text-light",
             "transparent": true,
             "link_text": "Shop now",
             "link": "",
-            "button_color": "btn--black",
+            "button_color": "btn--white",
             "button_style": "hero__btn btn btn--large btn--outline lnw"
           }
         },
