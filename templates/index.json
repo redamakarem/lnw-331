@@ -191,12 +191,22 @@
             "year": "2021",
             "back-text": "Award 3 back text"
           }
+        },
+        "c875682d-df7f-41d0-b99f-93c207aab0bb": {
+          "type": "award-card",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/award-symbol_1.png",
+            "heading": "Award 4",
+            "year": "2021",
+            "back-text": "Award 4 back text"
+          }
         }
       },
       "block_order": [
         "5c830ccb-075d-4ffd-8f51-7ab84af0dc4b",
         "3fc28f21-1429-4171-bdb2-190df354e24e",
-        "d052f9ea-16b9-4080-9052-e18aa57ada77"
+        "d052f9ea-16b9-4080-9052-e18aa57ada77",
+        "c875682d-df7f-41d0-b99f-93c207aab0bb"
       ],
       "settings": {
         "award-slider": ""
