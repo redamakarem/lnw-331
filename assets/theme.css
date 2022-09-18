@@ -24361,6 +24361,10 @@ body{
   height: 100vh;
 }
 
+.hero__content{
+  background-color:transparent;
+}
+
 .lnw-wrapper{
       padding: 0 56px;
 }
