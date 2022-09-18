@@ -232,6 +232,55 @@
         "product1": "good-karma",
         "product2": "karma-head"
       }
+    },
+    "1663530756b85542e1": {
+      "type": "section-logo-list",
+      "blocks": {
+        "16635307564dab844f-0": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_9.png",
+            "logo_width": 100,
+            "link": ""
+          }
+        },
+        "16635307564dab844f-1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_6.png",
+            "logo_width": 100,
+            "link": ""
+          }
+        },
+        "16635307564dab844f-2": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_7.png",
+            "logo_width": 180,
+            "link": ""
+          }
+        },
+        "24b95106-18fe-49c3-83a2-df0fd71529d0": {
+          "type": "logo-item",
+          "settings": {
+            "logo_width": 100,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16635307564dab844f-0",
+        "16635307564dab844f-1",
+        "16635307564dab844f-2",
+        "24b95106-18fe-49c3-83a2-df0fd71529d0"
+      ],
+      "settings": {
+        "title": "“For a slimline bullet that looks like a vape pen, the Meile model from ‘Love Not War’ is truly one of the best I’ve ever tried….I lost a weekend to this one.”",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 47,
+        "padding_bottom": 47
+      }
     }
   },
   "order": [
@@ -242,6 +291,7 @@
     "166352733174148440",
     "166352785053726dce",
     "16635300017820c205",
-    "166353040431c2ecd9"
+    "166353040431c2ecd9",
+    "1663530756b85542e1"
   ]
 }
