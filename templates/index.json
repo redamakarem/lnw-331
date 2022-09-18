@@ -129,25 +129,6 @@
         "padding_bottom": 100
       }
     },
-    "newsletter": {
-      "type": "section-newsletter",
-      "settings": {
-        "title": "Newsletter",
-        "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-        "enable_name": true,
-        "flex_align": "align--middle-stacked",
-        "button_color": "btn--neutral",
-        "height": "three-fifty-height-hero",
-        "width": "default",
-        "bg_color": "",
-        "color": "",
-        "bg_position": "center-center",
-        "overlay_opacity": 0,
-        "overlay_color": "#fca38c",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "16426127035bd96a27": {
       "type": "apps",
       "blocks": {
@@ -180,15 +161,35 @@
         "collection-slider": "adidas",
         "controls-position": "left"
       }
+    },
+    "16635300017820c205": {
+      "type": "testimonials-lnw",
+      "blocks": {
+        "5c830ccb-075d-4ffd-8f51-7ab84af0dc4b": {
+          "type": "award-card",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/award-symbol_1.png",
+            "heading": "Award 1",
+            "year": "2020",
+            "back-text": "Award 1 back text"
+          }
+        }
+      },
+      "block_order": [
+        "5c830ccb-075d-4ffd-8f51-7ab84af0dc4b"
+      ],
+      "settings": {
+        "award-slider": ""
+      }
     }
   },
   "order": [
     "slideshow",
     "1663527889e36f6fe4",
     "rich-text",
-    "newsletter",
     "16426127035bd96a27",
     "166352733174148440",
-    "166352785053726dce"
+    "166352785053726dce",
+    "16635300017820c205"
   ]
 }
