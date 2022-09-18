@@ -233,64 +233,15 @@
         "product2": "karma-head"
       }
     },
-    "1663530756b85542e1": {
-      "type": "section-logo-list",
-      "blocks": {
-        "16635307564dab844f-0": {
-          "type": "logo-item",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/image_9.png",
-            "logo_width": 100,
-            "link": ""
-          }
-        },
-        "16635307564dab844f-1": {
-          "type": "logo-item",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/image_6.png",
-            "logo_width": 100,
-            "link": ""
-          }
-        },
-        "16635307564dab844f-2": {
-          "type": "logo-item",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/image_7.png",
-            "logo_width": 180,
-            "link": ""
-          }
-        },
-        "24b95106-18fe-49c3-83a2-df0fd71529d0": {
-          "type": "logo-item",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/image_8.png",
-            "logo_width": 100,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16635307564dab844f-0",
-        "16635307564dab844f-1",
-        "16635307564dab844f-2",
-        "24b95106-18fe-49c3-83a2-df0fd71529d0"
-      ],
-      "settings": {
-        "title": "“For a slimline bullet that looks like a vape pen, the Meile model from ‘Love Not War’ is truly one of the best I’ve ever tried….I lost a weekend to this one.”",
-        "bg_color": "#f0eeec",
-        "color": "",
-        "padding_top": 47,
-        "padding_bottom": 47
-      }
-    },
     "16635310282fcc103f": {
       "type": "section-press",
       "blocks": {
         "1663531028eae87d79-0": {
           "type": "logo-item",
           "settings": {
-            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "logo_width": 100
+            "description": "",
+            "logo": "shopify:\/\/shop_images\/image_9.png",
+            "logo_width": 180
           }
         },
         "1663531028eae87d79-1": {
@@ -314,10 +265,10 @@
         "1663531028eae87d79-2"
       ],
       "settings": {
-        "title": "Press",
+        "title": "",
         "logo_opacity": 60,
         "text_color": "text-dark",
-        "bg_color": "#fafafa"
+        "bg_color": "#f0eeec"
       }
     },
     "1663531088395d71e7": {
@@ -377,7 +328,6 @@
     "166352785053726dce",
     "16635300017820c205",
     "166353040431c2ecd9",
-    "1663530756b85542e1",
     "16635310282fcc103f",
     "1663531088395d71e7"
   ]
