@@ -5,7 +5,7 @@
 
             {%- for block in section.blocks -%}
             <div class="item">
-                <div class="card">
+                <div class="card award-card">
                     <div class="front">
                         <div class="logo-wrapper">
                             <img src="{{ block.settings.logo | img_url }}" alt="Logo image" class="logo">
@@ -114,7 +114,7 @@ $('.next-slide').click(function() {
     awardSlider.trigger('next.owl.carousel');
 });
 
-$(".card").flip();
+$(".award-card").flip();
 
   {% endjavascript %}
 
