@@ -248,14 +248,16 @@
           "type": "logo-item",
           "settings": {
             "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "logo_width": 100
+            "logo": "shopify:\/\/shop_images\/image_6.png",
+            "logo_width": 180
           }
         },
         "1663531028eae87d79-2": {
           "type": "logo-item",
           "settings": {
             "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
-            "logo_width": 100
+            "logo": "shopify:\/\/shop_images\/image_7.png",
+            "logo_width": 180
           }
         }
       },
