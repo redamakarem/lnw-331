@@ -367,9 +367,9 @@
         "1663535070b1c6c6e8-1": {
           "type": "text",
           "settings": {
-            "subheading": "Introducing",
-            "title": "Text block",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "subheading": "",
+            "title": "",
+            "text": "<p><em>\"We have partnered with One Tree Planted, a non-profit organization on a mission to help the earth by planting trees. For every Love Not War purchase on our website, we will plant a tree.\"<\/em><\/p>",
             "text_size": 2,
             "text_columns": 1,
             "align_text": "text-left",
@@ -378,7 +378,7 @@
             "button_text": "Learn more",
             "button_url": "",
             "button_color": "btn--neutral",
-            "button_style": "hero__btn btn btn--large btn--outline caps"
+            "button_style": "lnw__btn"
           }
         }
       },
