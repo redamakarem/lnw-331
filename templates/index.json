@@ -299,8 +299,9 @@
           "type": "text-item",
           "settings": {
             "icon_name": "icon-basket-like",
+            "icon_alt": "shopify:\/\/shop_images\/i2.png",
             "icon_color": "#545454",
-            "title": "Simple checkout",
+            "title": "checkout is quick and easy to use",
             "text": "Our secure checkout is quick and easy to use."
           }
         },
@@ -308,16 +309,28 @@
           "type": "text-item",
           "settings": {
             "icon_name": "icon-chat",
+            "icon_alt": "shopify:\/\/shop_images\/i3.png",
             "icon_color": "#545454",
-            "title": "Get in touch",
+            "title": "Your secret is safe with us",
             "text": "Have questions? Get in touch with us at any time."
+          }
+        },
+        "3eb74c2f-830b-4db7-a482-26690fb952d0": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_alt": "shopify:\/\/shop_images\/i4.png",
+            "icon_color": "#545454",
+            "title": "Get in touch with us  at hello@l-n-w.com",
+            "text": ""
           }
         }
       },
       "block_order": [
         "16635310884e706e7d-0",
         "16635310884e706e7d-1",
-        "16635310884e706e7d-2"
+        "16635310884e706e7d-2",
+        "3eb74c2f-830b-4db7-a482-26690fb952d0"
       ],
       "settings": {
         "text_alignment": "left",
