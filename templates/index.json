@@ -118,6 +118,19 @@
         "collection-slider": "adidas",
         "controls-position": "left"
       }
+    },
+    "166352785053726dce": {
+      "type": "collection-lnw",
+      "settings": {
+        "collection-slider": "adidas",
+        "controls-position": "left"
+      }
+    },
+    "1663527889e36f6fe4": {
+      "type": "lnw-split-scroll",
+      "settings": {
+        "lnw-split-scroll": "test"
+      }
     }
   },
   "order": [
@@ -125,6 +138,8 @@
     "rich-text",
     "newsletter",
     "16426127035bd96a27",
-    "166352733174148440"
+    "166352733174148440",
+    "166352785053726dce",
+    "1663527889e36f6fe4"
   ]
 }
