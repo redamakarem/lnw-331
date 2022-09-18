@@ -173,10 +173,19 @@
             "year": "2020",
             "back-text": "Award 1 back text"
           }
+        },
+        "3fc28f21-1429-4171-bdb2-190df354e24e": {
+          "type": "award-card",
+          "settings": {
+            "heading": "Award 2",
+            "year": "2020",
+            "back-text": "Award 2 back text"
+          }
         }
       },
       "block_order": [
-        "5c830ccb-075d-4ffd-8f51-7ab84af0dc4b"
+        "5c830ccb-075d-4ffd-8f51-7ab84af0dc4b",
+        "3fc28f21-1429-4171-bdb2-190df354e24e"
       ],
       "settings": {
         "award-slider": ""
