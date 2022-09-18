@@ -7,16 +7,16 @@
           "type": "image",
           "settings": {
             "bg_position": "center-center",
-            "image": "shopify:\/\/shop_images\/Mask_group.png",
-            "mobile_image": "shopify:\/\/shop_images\/banner.png",
+            "image": "shopify:\/\/shop_images\/banner.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mask_group.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
-            "title": "",
+            "title": "PLEASURE YOU DESERVE",
             "description": "",
             "flex_align": "align--middle-center",
             "text_color": "text-light",
             "transparent": true,
-            "link_text": "",
+            "link_text": "Shop now",
             "link": "",
             "button_color": "btn--white",
             "button_style": "hero__btn btn btn--large btn--outline caps"
@@ -45,7 +45,7 @@
         "slideshow-1"
       ],
       "settings": {
-        "height": "image-height",
+        "height": "screen-height-two-thirds",
         "transition": "slide",
         "arrows_style": false,
         "dots_style": "line",
