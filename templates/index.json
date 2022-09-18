@@ -221,6 +221,17 @@
       "settings": {
         "award-slider": ""
       }
+    },
+    "166353040431c2ecd9": {
+      "type": "recommended-products-lnw",
+      "settings": {
+        "lnw-recommended-products": "Recommended",
+        "main-image": "shopify:\/\/shop_images\/second-row.png",
+        "heading": "LNW",
+        "description": "",
+        "product1": "",
+        "product2": ""
+      }
     }
   },
   "order": [
@@ -230,6 +241,7 @@
     "16426127035bd96a27",
     "166352733174148440",
     "166352785053726dce",
-    "16635300017820c205"
+    "16635300017820c205",
+    "166353040431c2ecd9"
   ]
 }
