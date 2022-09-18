@@ -155,10 +155,10 @@
             "first-column-text": "Test3"
           }
         },
-        "e22af53a-a206-426a-8cc7-686c14c66262": {
+        "c443527c-ae50-4e32-ad4d-76112b4e89b4": {
           "type": "second-column-elements",
           "settings": {
-            "second-column-text": "text"
+            "second-column-text": "test"
           }
         }
       },
@@ -167,7 +167,7 @@
         "2ebb1aed-2623-4aa8-ae4b-44f98223a031",
         "df1e1446-698c-4310-bdf7-cdb0b625ae2e",
         "a92de055-3cd5-44d5-8dd7-70b195cbd811",
-        "e22af53a-a206-426a-8cc7-686c14c66262"
+        "c443527c-ae50-4e32-ad4d-76112b4e89b4"
       ],
       "settings": {
         "lnw-split-scroll": "test"
