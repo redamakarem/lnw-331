@@ -263,6 +263,7 @@
         "24b95106-18fe-49c3-83a2-df0fd71529d0": {
           "type": "logo-item",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/image_8.png",
             "logo_width": 100,
             "link": ""
           }
@@ -276,10 +277,94 @@
       ],
       "settings": {
         "title": "“For a slimline bullet that looks like a vape pen, the Meile model from ‘Love Not War’ is truly one of the best I’ve ever tried….I lost a weekend to this one.”",
-        "bg_color": "",
+        "bg_color": "#f0eeec",
         "color": "",
         "padding_top": 47,
         "padding_bottom": 47
+      }
+    },
+    "16635310282fcc103f": {
+      "type": "section-press",
+      "blocks": {
+        "1663531028eae87d79-0": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        },
+        "1663531028eae87d79-1": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        },
+        "1663531028eae87d79-2": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "1663531028eae87d79-0",
+        "1663531028eae87d79-1",
+        "1663531028eae87d79-2"
+      ],
+      "settings": {
+        "title": "Press",
+        "logo_opacity": 60,
+        "text_color": "text-dark",
+        "bg_color": "#fafafa"
+      }
+    },
+    "1663531088395d71e7": {
+      "type": "section-text-row",
+      "blocks": {
+        "16635310884e706e7d-0": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-lock-card",
+            "icon_color": "#545454",
+            "title": "Secure transactions",
+            "text": "Transactions are handled with bank-grade security."
+          }
+        },
+        "16635310884e706e7d-1": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-basket-like",
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "text": "Our secure checkout is quick and easy to use."
+          }
+        },
+        "16635310884e706e7d-2": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "text": "Have questions? Get in touch with us at any time."
+          }
+        }
+      },
+      "block_order": [
+        "16635310884e706e7d-0",
+        "16635310884e706e7d-1",
+        "16635310884e706e7d-2"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "icon_size": 20,
+        "icon_alignment": "icon--left",
+        "heading_size": "h6",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
@@ -292,6 +377,8 @@
     "166352785053726dce",
     "16635300017820c205",
     "166353040431c2ecd9",
-    "1663530756b85542e1"
+    "1663530756b85542e1",
+    "16635310282fcc103f",
+    "1663531088395d71e7"
   ]
 }
