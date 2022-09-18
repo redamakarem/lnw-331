@@ -289,9 +289,10 @@
           "type": "text-item",
           "settings": {
             "icon_name": "icon-lock-card",
+            "icon_alt": "shopify:\/\/shop_images\/i1.png",
             "icon_color": "#545454",
-            "title": "Secure transactions",
-            "text": "Transactions are handled with bank-grade security."
+            "title": "Our products are made with FDA grade silicone",
+            "text": ""
           }
         },
         "16635310884e706e7d-1": {

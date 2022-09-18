@@ -81,10 +81,11 @@
           "header_sticky": false,
           "header_style": "logo_beside",
           "icon_family": "clean",
-          "logo": "shopify:\/\/shop_images\/Asset_2_2x-100.jpg",
+          "icon_size": "regular",
           "logo_max_limit": 215,
           "main_menu_linklist": "",
           "enable_search": true,
+          "show_social_icons": true,
           "transparent_home": false,
           "transparent_collection": false,
           "transparent_article": false,
@@ -127,12 +128,20 @@
         "settings": {
           "bg_color": "#435562",
           "color": "#ffffff",
-          "layout": "slider"
+          "layout": "slider",
+          "speed": 7
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+              "enable_name": true
+            }
+          },
           "footer-0": {
             "type": "linklist",
             "settings": {
@@ -146,19 +155,12 @@
               "title": "Social",
               "richtext": "<p>Stay current with updates from our social channels.<\/p>"
             }
-          },
-          "footer-2": {
-            "type": "newsletter",
-            "settings": {
-              "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "enable_name": true
-            }
           }
         },
         "block_order": [
+          "footer-2",
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "footer-1"
         ],
         "settings": {
           "logo_image_width": 150,
@@ -193,6 +195,7 @@
               "button_text": "Join",
               "button_color": "btn--neutral",
               "bg_color": "#ffffff",
+              "color": "",
               "newsletter_enable": true,
               "enable_name": false,
               "trigger": "always",
@@ -210,6 +213,7 @@
             "settings": {
               "title": "Text block",
               "text": "<p>Use this text to share announcements or sales.<\/p>",
+              "color": "",
               "bg_color": "#ffffff",
               "button_text": "Learn more",
               "button_url": "",
@@ -231,6 +235,7 @@
             "settings": {
               "title": "Text block",
               "text": "<p>Use this text to share announcements or sales.<\/p>",
+              "color": "",
               "bg_color": "#ffffff",
               "button_text": "Learn more",
               "button_url": "",
