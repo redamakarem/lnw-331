@@ -2276,6 +2276,11 @@
               console.log('Greater than first element');
             }
 
+            var next_threshold = threshold_list.filter(function(el){
+              return el>redasub;
+            });
+            console.log(next_threshold);
+
           
         })
         .catch((error) => console.log(error));
