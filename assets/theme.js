@@ -2270,7 +2270,7 @@
           this.build(cleanResponse);
           var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {   
             return parseInt(str); });
-            var redasub = this.subtotal;
+            var redasub = this.subtotal/100;
             console.log(redasub);
             if((this.subtotal/100)>threshold_list[0]){
               console.log('Greater than first element');
