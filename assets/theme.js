@@ -2274,7 +2274,12 @@
             if((this.subtotal/100)>threshold_list[0]){
               console.log('Greater than first element');
             }
-          console.log(threshold_list);
+
+           let test = threshold_list.filter(function(el){
+            return el > this.subtotal;
+           })
+
+          console.log(test);
         })
         .catch((error) => console.log(error));
     }
