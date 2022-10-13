@@ -2268,7 +2268,10 @@
 
           const cleanResponse = element.querySelector('[data-api-content]').innerHTML;
           this.build(cleanResponse);
-          var threshold_list = window.theme.settings.thresholds_list.split(',');
+          var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {
+            // using map() to convert array of strings to numbers
+   
+            return parseInt(str); });
           console.log(threshold_list);
         })
         .catch((error) => console.log(error));
