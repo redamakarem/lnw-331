@@ -58,6 +58,7 @@
     "show_free_shipping_message": true,
     "message": "Don't forget to use promo code 4JULY at checkout for 25% off your purchase!",
     "free_shipping_limit": "10",
+    "thresholds_list": "100,200,300",
     "checkout_logo_image": "shopify:\/\/shop_images\/LNW_Logo_100px_x_100px_crop_Black_on_white_250320_RS-01_100x_1.jpg",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
