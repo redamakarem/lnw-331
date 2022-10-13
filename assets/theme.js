@@ -2276,11 +2276,7 @@
               console.log('Greater than first element');
             }
 
-          //  let test = threshold_list.filter(function(el){
-          //   return el > reda_sub;
-          //  })
-
-          console.log(test);
+          
         })
         .catch((error) => console.log(error));
     }
