@@ -2276,7 +2276,7 @@
             }
 
            let test = threshold_list.filter(function(el){
-            return el > this.subtotal;
+            return el > 100;
            })
 
           console.log(test);
