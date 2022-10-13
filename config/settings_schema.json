@@ -686,5 +686,24 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "Custom",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Tiers Discount"
+      },
+      {
+        "type": "paragraph",
+        "content": "Add your thresholds"
+      },
+      {
+        "type": "text",
+        "id": "thresholds_list",
+        "label": "Threshold List",
+        "default": "100 200 300"
+      }
+    ]
   }
 ]
