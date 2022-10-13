@@ -2271,14 +2271,12 @@
           var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {   
             return parseInt(str); });
             var redasub = this.subtotal/100;
-            console.log(redasub);
-            if((this.subtotal/100)>threshold_list[0]){
-              console.log('Greater than first element');
-            }
+            
 
             var next_threshold = threshold_list.filter(function(el){
               return el>redasub;
             });
+            console.log(next_threshold.length);
             if(next_threshold.length>0){
               console.log('Your next threshold is ' + next_threshold[0]);
             }
