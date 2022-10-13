@@ -151,6 +151,7 @@
         enableQuickAdd: {{ settings.quickview_enable | json }},
         enableAnimations: {{ settings.animations_enable | json }},
         transparentHeader: false,
+        thresholds_list: {{ settings.thresholds_list | json }},
       },
       moneyFormat: {{ settings.currency_code_enable | json }} ? {{ shop.money_with_currency_format | json }} : {{ shop.money_format | json }},
       moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
