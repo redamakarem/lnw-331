@@ -2268,7 +2268,7 @@
 
           const cleanResponse = element.querySelector('[data-api-content]').innerHTML;
           this.build(cleanResponse);
-          var threshold_list = this.settings.threshold_list;
+          var threshold_list = theme.settings.threshold_list;
           console.log(threshold_list);
         })
         .catch((error) => console.log(error));
