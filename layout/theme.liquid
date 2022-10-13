@@ -152,6 +152,7 @@
         enableAnimations: {{ settings.animations_enable | json }},
         transparentHeader: false,
         thresholds_list: {{ settings.thresholds_list | json }},
+        cart: {{cart | json }},
       },
       moneyFormat: {{ settings.currency_code_enable | json }} ? {{ shop.money_with_currency_format | json }} : {{ shop.money_format | json }},
       moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
