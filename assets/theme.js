@@ -2268,7 +2268,8 @@
 
           const cleanResponse = element.querySelector('[data-api-content]').innerHTML;
           this.build(cleanResponse);
-          console.log('YAAAS');
+          var threshold_list = '{{ settings.thresholds_list }}';
+          console.log(threshold_list);
         })
         .catch((error) => console.log(error));
     }
