@@ -2279,7 +2279,9 @@
             var next_threshold = threshold_list.filter(function(el){
               return el>redasub;
             });
-            console.log(next_threshold);
+            if(next_threshold.length>0){
+              console.log('Your next threshold is ' + next_threshold[0]);
+            }
 
           
         })
