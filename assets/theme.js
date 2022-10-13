@@ -2268,10 +2268,11 @@
 
           const cleanResponse = element.querySelector('[data-api-content]').innerHTML;
           this.build(cleanResponse);
-          var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {
-            // using map() to convert array of strings to numbers
-   
+          var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {   
             return parseInt(str); });
+            if(this.subtotal>threshold_list[0]){
+              console.log('Greater than first element');
+            }
           console.log(threshold_list);
         })
         .catch((error) => console.log(error));
