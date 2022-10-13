@@ -2269,6 +2269,7 @@
           const cleanResponse = element.querySelector('[data-api-content]').innerHTML;
           this.build(cleanResponse);
           var threshold_list = window.theme.settings.thresholds_list.split(',').map(function(str) {   
+            var reda_sub = this.subtotal;
             return parseInt(str); });
             console.log(this.subtotal/100);
             if((this.subtotal/100)>threshold_list[0]){
@@ -2276,7 +2277,7 @@
             }
 
            let test = threshold_list.filter(function(el){
-            return el > 100;
+            return el > reda_sub;
            })
 
           console.log(test);
